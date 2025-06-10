@@ -1,0 +1,204 @@
+{
+  "reviews": [
+      {
+          "title": "Excellent service and quick delivery",
+          "rating": 4,
+          "name": "Jessica Adams",
+          "date": "April 17, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The seller was very responsive and accommodating. The product arrived earlier than expected and was exactly as described."
+      },
+      {
+          "title": "Very happy with my purchase",
+          "rating": 5,
+          "name": "Justin Winters",
+          "date": "April 27, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+      },
+      {
+          "title": "Very happy with my purchase",
+          "rating": 4,
+          "name": "Melissa Scott",
+          "date": "March 09, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+      },
+      {
+          "title": "Excellent service and quick delivery",
+          "rating": 5,
+          "name": "Jason Mason",
+          "date": "December 17, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The communication was excellent and the seller went above and beyond to ensure I was happy with my purchase."
+      },
+      {
+          "title": "Very happy with my purchase",
+          "rating": 5,
+          "name": "Courtney Nelson",
+          "date": "March 04, 2025",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+      },
+      {
+          "title": "The seller did a fantastic job of designing my website",
+          "rating": 4,
+          "name": "David Glover",
+          "date": "August 31, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The communication was excellent and the seller went above and beyond to ensure I was happy with my purchase."
+      },
+      {
+          "title": "Very happy with my purchase",
+          "rating": 5,
+          "name": "Aaron Heath",
+          "date": "March 13, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+      },
+      {
+          "title": "The seller did a fantastic job of designing my website",
+          "rating": 5,
+          "name": "Angela Fisher",
+          "date": "July 23, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The communication was excellent and the seller went above and beyond to ensure I was happy with my purchase."
+      },
+      {
+          "title": "Great product, will buy again",
+          "rating": 5,
+          "name": "Anthony Barrera",
+          "date": "October 17, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "I am extremely satisfied with the quality of the product. It exceeded my expectations and I will definitely be a returning customer."
+      },
+      {
+          "title": "Highly recommend this seller",
+          "rating": 4,
+          "name": "Lauren Martinez",
+          "date": "January 20, 2025",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "I am extremely satisfied with the quality of the product. It exceeded my expectations and I will definitely be a returning customer."
+      },
+      {
+          "title": "Very happy with my purchase",
+          "rating": 4,
+          "name": "Michelle Morris",
+          "date": "February 06, 2025",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The seller was very responsive and accommodating. The product arrived earlier than expected and was exactly as described."
+      },
+      {
+          "title": "The seller did a fantastic job of designing my website",
+          "rating": 5,
+          "name": "Garrett Osborn",
+          "date": "August 04, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The product is amazing and the seller was very helpful throughout the entire process. Highly recommend!"
+      },
+      {
+          "title": "Excellent service and quick delivery",
+          "rating": 4,
+          "name": "Mark Gonzalez",
+          "date": "December 27, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The seller was very responsive and accommodating. The product arrived earlier than expected and was exactly as described."
+      },
+      {
+          "title": "The seller did a fantastic job of designing my website",
+          "rating": 4,
+          "name": "Jessica Myers",
+          "date": "December 15, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The communication was excellent and the seller went above and beyond to ensure I was happy with my purchase."
+      },
+      {
+          "title": "Excellent service and quick delivery",
+          "rating": 4,
+          "name": "Stephanie Nelson",
+          "date": "July 19, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The seller was very responsive and accommodating. The product arrived earlier than expected and was exactly as described."
+      },
+      {
+          "title": "Excellent service and quick delivery",
+          "rating": 4,
+          "name": "Jessica Mcgee",
+          "date": "March 25, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The product is amazing and the seller was very helpful throughout the entire process. Highly recommend!"
+      },
+      {
+          "title": "The seller did a fantastic job of designing my website",
+          "rating": 4,
+          "name": "Paul Mathis",
+          "date": "October 12, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "I am extremely satisfied with the quality of the product. It exceeded my expectations and I will definitely be a returning customer."
+      },
+      {
+          "title": "Very happy with my purchase",
+          "rating": 4,
+          "name": "Timothy Roberts",
+          "date": "May 18, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The communication was excellent and the seller went above and beyond to ensure I was happy with my purchase."
+      },
+      {
+          "title": "The seller did a fantastic job of designing my website",
+          "rating": 4,
+          "name": "Brian Jimenez",
+          "date": "February 13, 2025",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The communication was excellent and the seller went above and beyond to ensure I was happy with my purchase."
+      },
+      {
+          "title": "The seller did a fantastic job of designing my website",
+          "rating": 4,
+          "name": "Jane Ramos",
+          "date": "March 22, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The communication was excellent and the seller went above and beyond to ensure I was happy with my purchase."
+      },
+      {
+          "title": "Excellent service and quick delivery",
+          "rating": 5,
+          "name": "Deanna Parks",
+          "date": "March 31, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The communication was excellent and the seller went above and beyond to ensure I was happy with my purchase."
+      },
+      {
+          "title": "Great product, will buy again",
+          "rating": 4,
+          "name": "William Porter",
+          "date": "April 04, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The seller was very responsive and accommodating. The product arrived earlier than expected and was exactly as described."
+      },
+      {
+          "title": "Very happy with my purchase",
+          "rating": 4,
+          "name": "Diane Dean",
+          "date": "May 07, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+      },
+      {
+          "title": "Highly recommend this seller",
+          "rating": 5,
+          "name": "Dawn Norman",
+          "date": "September 29, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "I am extremely satisfied with the quality of the product. It exceeded my expectations and I will definitely be a returning customer."
+      },
+      {
+          "title": "Great product, will buy again",
+          "rating": 4,
+          "name": "Darren Simmons",
+          "date": "November 05, 2024",
+          "image": "https://source.unsplash.com/random/256x256/?face",
+          "text": "The seller was very responsive and accommodating. The product arrived earlier than expected and was exactly as described."
+      }
+  ]
+}

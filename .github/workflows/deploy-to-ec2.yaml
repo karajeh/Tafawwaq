@@ -1,0 +1,102 @@
+
+name: Build and Deploy Application
+
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Load environment variables
+        id: load-env
+        run: |
+          source .github/env
+          echo "NODE_VERSION=$NODE_VERSION" >> $GITHUB_ENV
+
+      - name: Set environment variables from GitHub Secrets
+        id: load-secrets
+        run: |
+          
+          echo "SERVER_HOST=${{ secrets.SERVER_HOST }}" | sed 's/"/\\"/g' >> $GITHUB_ENV
+          echo "SERVER_USER=${{ secrets.SERVER_USER }}" | sed 's/"/\\"/g' >> $GITHUB_ENV
+          echo "SERVER_KEY=${{ secrets.SERVER_KEY }}" | sed 's/"/\\"/g' >> $GITHUB_ENV
+          {
+            echo "DB_URL=${{ secrets.DB_URL }}"   
+            echo "NEXT_PUBLIC_API_BASE_URL=${{ secrets.NEXT_PUBLIC_API_BASE_URL }}"   
+            echo "VIDEOSDK_API_KEY=${{ secrets.VIDEOSDK_API_KEY }}"
+            echo "VIDEOSDK_SECRET_KEY=${{ secrets.VIDEOSDK_SECRET_KEY }}"     
+            echo "JWT_SECRET=${{ secrets.JWT_SECRET }}"
+            echo "STRIPE_WEBHOOK_SECRET=${{ secrets.STRIPE_WEBHOOK_SECRET }}"
+            echo "STRIPE_SECRET_KEY=${{ secrets.STRIPE_SECRET_KEY }}"
+            echo "FRONTEND_URL=https://tafawwaq.com"
+          } | sed 's/"/\\"/g' >> .env
+          
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.CR_TOKEN }}
+
+      - name: Build Docker images
+        run: |
+          # Set repository owner to lowercase for GHCR
+          OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          
+          # Build images with GHCR tags
+          docker build -t ghcr.io/$OWNER/tafawwaq-frontend:latest ./client
+          docker build -t ghcr.io/$OWNER/tafawwaq-backend:latest ./server
+      - name: Push Docker images
+        run: |    
+          # Set repository owner to lowercase for GHCR
+          OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          # Push images to GHCR
+          docker push ghcr.io/$OWNER/tafawwaq-frontend:latest
+          docker push ghcr.io/$OWNER/tafawwaq-backend:latest
+      
+      - name: Transfer scripts to EC2
+        run: |
+          echo "-----BEGIN RSA PRIVATE KEY-----" > key.pem
+          echo "${{ secrets.SERVER_KEY }}" >> key.pem
+          echo "-----END RSA PRIVATE KEY-----" >> key.pem
+          chmod 600 key.pem  
+
+          scp -i key.pem -o StrictHostKeyChecking=no docker-compose.yaml $SERVER_USER@$SERVER_HOST:/home/ubuntu
+          scp -i key.pem -o StrictHostKeyChecking=no .env $SERVER_USER@$SERVER_HOST:/home/ubuntu      
+      
+
+      - name: Remove old Docker images on server
+        run: |
+          echo "-----BEGIN RSA PRIVATE KEY-----" > key.pem
+          echo "${{ secrets.SERVER_KEY }}" >> key.pem
+          echo "-----END RSA PRIVATE KEY-----" >> key.pem
+          chmod 600 key.pem
+          # Stop all running containers
+          ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "docker ps -q | xargs -r docker stop"
+          # Remove all containers
+          ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "docker ps -aq | xargs -r docker rm"
+          # Remove all images
+          ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "docker images -q | xargs -r docker rmi"      
+
+      - name: Restart Docker containers with docker-compose
+        run: |
+          echo "-----BEGIN RSA PRIVATE KEY-----" > key.pem
+          echo "${{ secrets.SERVER_KEY }}" >> key.pem
+          echo "-----END RSA PRIVATE KEY-----" >> key.pem
+          chmod 600 key.pem
+          OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "echo '${{ secrets.CR_TOKEN }}' | docker login ghcr.io -u $OWNER --password-stdin"
+          ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "docker-compose down"
+          ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "docker-compose pull"
+          ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "docker-compose up -d"
+          

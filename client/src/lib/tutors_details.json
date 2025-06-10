@@ -1,0 +1,154 @@
+{
+  "tutors": [
+    {
+      "id": 1,
+      "name": "Ahmed Khan",
+      "image": "/images/find-a-tutor/ahmed.png",
+      "title": "English Tutor",
+      "description": "I'm Ahmed, a certified IB English tutor with 6 years of experience. My approach is to make critical analysis and essay writing easier and more enjoyable.",
+      "isAvailable": true,
+      "rating": {
+        "stars": 5,
+        "value": 4.5,
+        "count": 178
+      },
+      "rate": 170,
+      "hoursTutored": 767,
+      "responseTime": "10 minutes",
+      "location": "London, UK",
+      "memberSince": "Aug 19, 2020",
+      "tutoringExperience": "6-8 Years",
+      "age": "30-35 Years",
+      "gender": "Male",
+      "language": "English, Arabic",
+      "educationLevel": "Master Degree",
+      "teachingGrades": ["Elementary", "Middle School", "High School", "Vocational Training"],
+      "subjects": ["English Speaking", "English Listening", "English Writing", "Vocabulary"],
+      "review": {
+        "quote": "Extremely helpful",
+        "details": "Ahmed transformed my approach to English! His teaching helped me boost my grades in the IB program, and I've become more confident in my writing. He really knows how to simplify difficult concepts and make learning enjoyable.",
+        "reviewer": "Rebecca"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Sarah Al-Harbi",
+      "image": "/images/find-a-tutor/sarah.png",
+      "title": "English Tutor",
+      "description": "Hi! I'm Sarah, and I've been teaching English for over 8 years, focusing on IGCSE and SAT prep. I'm passionate about helping students excel in exams while also improving.",
+      "isAvailable": true,
+      "rating": {
+        "stars": 5,
+        "value": 4.5,
+        "count": 178
+      },
+      "rate": 190,
+      "hoursTutored": 467,
+      "responseTime": "5 minutes",
+      "location": "Dubai, UAE",
+      "memberSince": "Jan 15, 2018",
+      "tutoringExperience": "8-10 Years",
+      "age": "35-40 Years",
+      "gender": "Female",
+      "language": "English, French",
+      "educationLevel": "PhD",
+      "teachingGrades": ["Elementary", "Middle School", "High School"],
+      "subjects": ["English Speaking", "English Listening", "English Writing"],
+      "review": {
+        "quote": "Extremely Amazing and professional tutor",
+        "details": "Sarah is an outstanding tutor! She helped me so much with my vocabulary and reading skills. I used to struggle with English, but her patient and interactive teaching style made all the difference. Thanks to her, I feel a lot more confident in school.",
+        "reviewer": "Rebecca"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Hazem Farsi",
+      "image": "/images/find-a-tutor/hazem.png",
+      "title": "English Tutor",
+      "description": "Hello! I'm Hazem, and I've been teaching English for 10 years with a focus on KSA national curriculum students.",
+      "isAvailable": true,
+      "rating": {
+        "stars": 5,
+        "value": 4.5,
+        "count": 178
+      },
+      "rate": 200,
+      "hoursTutored": 267,
+      "responseTime": "15 minutes",
+      "location": "Riyadh, KSA",
+      "memberSince": "Mar 22, 2015",
+      "tutoringExperience": "10+ Years",
+      "age": "40-45 Years",
+      "gender": "Male",
+      "language": "English, Arabic",
+      "educationLevel": "Bachelor Degree",
+      "teachingGrades": ["Middle School", "High School"],
+      "subjects": ["English Speaking", "English Writing", "Vocabulary"],
+      "review": {
+        "quote": "Extremely Amazing and professional tutor",
+        "details": "Hazem is an amazing tutor! He helped me raise my SAT score by over 200 points in just a few months. His lessons were always clear and enjoyable, and he gave me lots of useful tips on time management and test strategies. I highly recommend him to anyone looking to improve their English!",
+        "reviewer": "Rebecca"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Alexson David",
+      "image": "/images/find-a-tutor/alexson.png",
+      "title": "English Tutor",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem in nibh dignissim pretium. Sed tristique viverra semper. Quisque luctus vestibulum eros, a pellentesque justo tempor quis. Sed vehicula maximus gravida.",
+      "isAvailable": true,
+      "rating": {
+        "stars": 5,
+        "value": 5,
+        "count": 178
+      },
+      "rate": 160,
+      "hoursTutored": 44567,
+      "responseTime": "15 minutes",
+      "location": "New York, USA",
+      "memberSince": "Jul 10, 2019",
+      "tutoringExperience": "3-5 Years",
+      "age": "25-30 Years",
+      "gender": "Male",
+      "language": "English, Spanish",
+      "educationLevel": "Master Degree",
+      "teachingGrades": ["Elementary", "Middle School"],
+      "subjects": ["English Speaking", "English Listening"],
+      "review": {
+        "quote": "Extremely Amazing and professional tutor",
+        "details": "Lorem ipsum dolor sit amet...",
+        "reviewer": "Rebecca"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Emily Johnson",
+      "image": "/images/find-a-tutor/emily.png",
+      "title": "Math Tutor",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem in nibh dignissim pretium. Sed tristique viverra semper. Quisque luctus vestibulum eros, a pellentesque justo tempor quis. Sed vehicula maximus gravida.",
+      "isAvailable": true,
+      "rating": {
+        "stars": 5,
+        "value": 5,
+        "count": 178
+      },
+      "rate": 145,
+      "hoursTutored": 44567,
+      "responseTime": "15 minutes",
+      "location": "Sydney, Australia",
+      "memberSince": "Sep 5, 2021",
+      "tutoringExperience": "1-2 Years",
+      "age": "22-27 Years",
+      "gender": "Female",
+      "language": "English, Chinese",
+      "educationLevel": "Bachelor Degree",
+      "teachingGrades": ["Elementary", "Middle School", "High School"],
+      "subjects": ["Math", "Algebra", "Geometry"],
+      "review": {
+        "quote": "Extremely Amazing and professional tutor",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem in nibh dignissim pretium. Sed tristique viverra semper. Quisque luctus vestibulum eros, a pellentesque justo tempor quis. Sed vehicula maximus gravida. Phasellus ut congue ligula. Proin eu efficitur neque, non bibendum massa. Etiam eget purus non lectus consectetur auctor sit amet ac lectus. Aenean tincidunt erat ac fringilla malesuada.",
+        "reviewer": "Rebecca"
+      }
+    }
+  ]
+}

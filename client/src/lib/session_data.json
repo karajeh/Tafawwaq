@@ -1,0 +1,202 @@
+[
+  {
+    "id": "SES-001",
+    "tutor": {
+      "id": "T001",
+      "name": "Dr. John Smith",
+      "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "department": "Mathematics"
+    },
+    "student": {
+      "id": "S001",
+      "name": "Emma Johnson",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    "dateTime": "2025-02-28 10:00 AM",
+    "curriculum": "Advanced Placement",
+    "subject": "Calculus",
+    "duration": "45 minutes",
+    "rating": 5,
+    "status": "Completed"
+  },
+  {
+    "id": "SES-002",
+    "tutor": {
+      "id": "T002",
+      "name": "Prof. Sarah Lee",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "department": "Biology"
+    },
+    "student": {
+      "id": "S002",
+      "name": "Michael Chen",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    "dateTime": "2025-02-27 2:30 PM",
+    "curriculum": "International Baccalaureate",
+    "subject": "Molecular Biology",
+    "duration": "60 minutes",
+    "rating": 4,
+    "status": "Completed"
+  },
+  {
+    "id": "SES-003",
+    "tutor": {
+      "id": "T003",
+      "name": "Dr. James Wilson",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "department": "Physics"
+    },
+    "student": {
+      "id": "S003",
+      "name": "Sophia Garcia",
+      "avatar": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    "dateTime": "2025-02-27 11:15 AM",
+    "curriculum": "Advanced Placement",
+    "subject": "Quantum Mechanics",
+    "duration": "90 minutes",
+    "rating": 3,
+    "status": "Flagged"
+  },
+  {
+    "id": "SES-004",
+    "tutor": {
+      "id": "T004",
+      "name": "Prof. David Kim",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "department": "Chemistry"
+    },
+    "student": {
+      "id": "S004",
+      "name": "Olivia Martinez",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    "dateTime": "2025-02-26 3:45 PM",
+    "curriculum": "Cambridge IGCSE",
+    "subject": "Organic Chemistry",
+    "duration": "75 minutes",
+    "rating": 5,
+    "status": "Completed"
+  },
+  {
+    "id": "SES-005",
+    "tutor": {
+      "id": "T005",
+      "name": "Dr. Emily Brown",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "department": "Literature"
+    },
+    "student": {
+      "id": "S005",
+      "name": "William Taylor",
+      "avatar": "https://images.unsplash.com/photo-1463453091185-61582044d556?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    "dateTime": "2025-02-26 1:00 PM",
+    "curriculum": "International Baccalaureate",
+    "subject": "English Literature",
+    "duration": "60 minutes",
+    "rating": 2,
+    "status": "Canceled"
+  },
+  {
+    "id": "SES-006",
+    "tutor": {
+      "id": "T006",
+      "name": "Prof. Robert Jones",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "department": "Computer Science"
+    },
+    "student": {
+      "id": "S006",
+      "name": "Ava Wilson",
+      "avatar": "https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    "dateTime": "2025-02-25 10:30 AM",
+    "curriculum": "Advanced Placement",
+    "subject": "Data Structures",
+    "duration": "90 minutes",
+    "rating": 5,
+    "status": "Completed"
+  },
+  {
+    "id": "SES-007",
+    "tutor": {
+      "id": "T007",
+      "name": "Dr. Mary Johnson",
+      "avatar": "https://images.unsplash.com/photo-1509783236416-c9ad59bae472?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "department": "History"
+    },
+    "student": {
+      "id": "S007",
+      "name": "Daniel Thompson",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    "dateTime": "2025-02-25 9:00 AM",
+    "curriculum": "Cambridge IGCSE",
+    "subject": "World History",
+    "duration": "60 minutes",
+    "rating": 4,
+    "status": "Completed"
+  },
+  {
+    "id": "SES-008",
+    "tutor": {
+      "id": "T008",
+      "name": "Prof. Thomas Clark",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "department": "Economics"
+    },
+    "student": {
+      "id": "S008",
+      "name": "Isabella Rodriguez",
+      "avatar": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    "dateTime": "2025-02-24 2:15 PM",
+    "curriculum": "International Baccalaureate",
+    "subject": "Macroeconomics",
+    "duration": "75 minutes",
+    "rating": 1,
+    "status": "Flagged"
+  },
+  {
+    "id": "SES-009",
+    "tutor": {
+      "id": "T009",
+      "name": "Dr. Laura White",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "department": "Psychology"
+    },
+    "student": {
+      "id": "S009",
+      "name": "Jacob Martin",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    "dateTime": "2025-02-24 11:30 AM",
+    "curriculum": "Advanced Placement",
+    "subject": "Cognitive Psychology",
+    "duration": "60 minutes",
+    "rating": 3,
+    "status": "Completed"
+  },
+  {
+    "id": "SES-010",
+    "tutor": {
+      "id": "T010",
+      "name": "Prof. Richard Moore",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "department": "Art History"
+    },
+    "student": {
+      "id": "S010",
+      "name": "Mia Jackson",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    "dateTime": "2025-02-23 3:00 PM",
+    "curriculum": "Cambridge IGCSE",
+    "subject": "Renaissance Art",
+    "duration": "90 minutes",
+    "rating": 5,
+    "status": "Canceled"
+  }
+]

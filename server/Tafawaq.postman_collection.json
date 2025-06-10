@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "4b691140-cf60-458c-a329-719fdfa260f8",
+		"name": "Tafawaq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33619963"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Rasel Khan\",\r\n    \"username\":\"rasel\",\r\n    \"email\":\"rasel@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"role\":\"Student\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usernameOrEmail\":\"rasel\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzFlMzAxNTZlZjc5ZDgwZTNkNDBjMWYiLCJyb2xlIjoiU3R1ZGVudCIsImlhdCI6MTczMDAzNDE0NywiZXhwIjoxNzMwMTIwNTQ3fQ.L-nXWyIJ3O45JgsKA1-BSm8lPvA-TYE1--EfY2d2rM8"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:4000/api/auth/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "Register Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Kabir Ahmed Ridoy\",\r\n    \"username\":\"kabir\",\r\n    \"email\":\"kabir@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/auth/register-admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzFlM2RhNzA1ZjQ2OWI0MjRlNDU3NzAiLCJyb2xlIjoiU3R1ZGVudCIsImlhdCI6MTczMDIxODgxMiwiZXhwIjoxNzMwMzA1MjEyfQ.McRI-aLBWfi7HJKZiQPerow4kwJqUDbWXJFiTH7KES0"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Rasel Khan\",\r\n  \"city\":\"Bhola\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/user/update-profile"
+			},
+			"response": []
+		},
+		{
+			"name": "Request Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:4000/api/auth/request-password-reset"
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:4000/api/auth/reset-password"
+			},
+			"response": []
+		}
+	]
+}

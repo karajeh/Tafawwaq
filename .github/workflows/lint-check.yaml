@@ -1,0 +1,48 @@
+name: Lint and Format check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Load environment variables
+        id: load-env
+        run: |
+          source .github/env
+          echo "NODE_VERSION=$NODE_VERSION" >> $GITHUB_ENV
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: server/node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('server/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+
+      - name: Install dependencies
+        working-directory: server
+        run: npm install
+
+      - name: Run ESLint
+        working-directory: server
+        run: npm run lint
+
+      - name: Check code formatting with Prettier
+        working-directory: server
+        run: npm run format -- --check
